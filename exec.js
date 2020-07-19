@@ -117,7 +117,7 @@ return array;
 }
 
 let animeGrafo = () => {  
-    //if(sigma.plugins.animate){
+    if(sigma.plugins.animate){
         let prefix = [
             'random1_', 'random2_',
             'random3_','random4_',
@@ -133,7 +133,7 @@ let animeGrafo = () => {
         }
         );
         animationStep = animationStep > 7 ? 0 : animationStep;
-    //}
+    }
 }
 
 let intervalAnimeGrafo = setInterval(animeGrafo, 500);
