@@ -117,21 +117,23 @@ return array;
 }
 
 let animeGrafo = () => {  
-    let prefix = [
-        'random1_', 'random2_',
-        'random3_','random4_',
-        'random5_', 'random6_',
-        'random7_','random8_'
-    ][animationStep++];
-    sigma.plugins.animate(
-      s,
-      {
-        x: prefix + 'x',
-        y: prefix + 'y',
-        type: prefix + 'type',
-      }
-    );
-    animationStep = animationStep > 7 ? 0 : animationStep;
+    //if(sigma.plugins.animate){
+        let prefix = [
+            'random1_', 'random2_',
+            'random3_','random4_',
+            'random5_', 'random6_',
+            'random7_','random8_'
+        ][animationStep++];
+        sigma.plugins.animate(
+        s,
+        {
+            x: prefix + 'x',
+            y: prefix + 'y',
+            type: prefix + 'type',
+        }
+        );
+        animationStep = animationStep > 7 ? 0 : animationStep;
+    //}
 }
 
 let intervalAnimeGrafo = setInterval(animeGrafo, 500);
