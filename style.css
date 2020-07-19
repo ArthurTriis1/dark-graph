@@ -79,7 +79,7 @@ body {
 }
 
 .desenvolvedor{
-    background-color: rgba(32, 32, 32, 0.493);
+    background-color: rgba(114, 114, 114, 0.712);
     height: calc(10vh - 2px);
     color: #FFF;
     display: flex;
@@ -96,4 +96,13 @@ h1{
     font-size: 1.5rem;
 }
 
+a{
+    color: rgb(1, 33, 85) !important;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+a:hover{
+    color: rgb(11, 59, 138) !important;
+}
 

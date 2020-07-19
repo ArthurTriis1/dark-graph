@@ -125,12 +125,12 @@ let animeGrafo = () => {
             'random7_','random8_'
         ][animationStep++];
         sigma.plugins.animate(
-        s,
-        {
-            x: prefix + 'x',
-            y: prefix + 'y',
-            type: prefix + 'type',
-        }
+            s,
+            {
+                x: prefix + 'x',
+                y: prefix + 'y',
+                type: prefix + 'type',
+            }
         );
         animationStep = animationStep > 7 ? 0 : animationStep;
     }
@@ -150,6 +150,7 @@ function inverter() {
         intervalAnimeGrafo = setInterval(animeGrafo, 500);
         clicked = false;
         s.graph.edges().forEach((ed) => (ed.color = "#000"));
+        s.graph.nodes().forEach((no) => (no.color = "#000"));
         s.refresh();
 
     }
@@ -327,6 +328,7 @@ sigma.canvas.nodes.image.cache(url, function () {
             }
             clicked = false;
             s.graph.edges().forEach((ed) => (ed.color = "#000"));
+            e.data.node.color = "#000"
         }else{
 
             if(!state){
@@ -335,9 +337,13 @@ sigma.canvas.nodes.image.cache(url, function () {
             if (!clicked) {
                 clicked = true;
             }
+            
             s.graph
                 .edges()
                 .forEach((ed) => (ed.color = "rgba(122, 150, 189, 0)"));
+            s.graph
+                .nodes()
+                .forEach((no) => (no.color = "#000"));
             s.graph
                 .edges()
                 .filter((edge) => {
@@ -350,6 +356,7 @@ sigma.canvas.nodes.image.cache(url, function () {
                 return edge.target === e.data.node.id;
                 })
                 .forEach((ed) => (ed.color = "rgb(8, 68, 117)"));
+            e.data.node.color = "#FFF"
         }
 
         // let container = document.getElementById("container");
