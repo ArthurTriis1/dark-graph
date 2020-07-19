@@ -117,7 +117,7 @@ return array;
 }
 
 let animeGrafo = () => {  
-    if(s.settings){
+    if(s){
         let prefix = [
             'random1_', 'random2_',
             'random3_','random4_',
