@@ -38,7 +38,7 @@ let g = {
       {
         id: "ulrich",
         label: "Ulrich Nilsen",
-        url: "img/ulrich1.jpg"
+        url: "img/ulrich.jpeg"
       },
       {
         id: "katharina",
@@ -53,12 +53,12 @@ let g = {
       {
         id: "mikkel",
         label: "Mikkel Nilsen / Michael Kahnwald",
-        url: "img/mikkel.jpg"
+        url: "img/mikkel.jpeg"
       },
       {
         id: "magnus",
         label: "Magnus Nilsen",
-        url: "img/magnus.png"
+        url: "img/magnus.jpg"
       },
       {
         id: "martha1",
@@ -121,7 +121,7 @@ let g = {
       {
         id: "franziska",
         label: "Franziska Doppler",
-        url: "img/franziska.png"
+        url: "img/franziska.jpg"
 
       },
       {
