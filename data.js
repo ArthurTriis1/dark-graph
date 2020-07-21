@@ -28,7 +28,7 @@ let g = {
       {
         id: "jana",
         label: "Jana",
-        url: "img/jana.png"
+        url: "img/jana.jpg"
       },
       {
         id: "mads",
@@ -48,7 +48,7 @@ let g = {
       {
         id: "hannah",
         label: "Hannah Kahnwald",
-        url: "img/hannah.jpg"
+        url: "img/hanna.jpg"
       },
       {
         id: "mikkel",
