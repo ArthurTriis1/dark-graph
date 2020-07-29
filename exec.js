@@ -5,7 +5,7 @@ let loaded = 0,
     clicked = false,
     animationStep = 0;
     state = 0,
-    labelsButton = ["Estabilizar Partícula", "Analisar", "Árvore Genelógica", "Oscilar"],
+    labelsButton = ["Estabilizar Partícula", "Analisar", "Árvore Genealógica", "Oscilar"],
     selectedId = "";
 
 const urls = g.nodes.filter(node => node.url).map(node => node.url);
